@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+</head>
+
+<body>
+
+    {{>navbar}}
+
+    <div class="inner-body-weather">
+        <div class="upper">
+            <form>
+                <input type="text" placeholder="city" id="cityValue" />
+                <input type="submit" value="search" id="searchBtn" />
+            </form>
+        </div>
+        <div class="lower">
+            <div class="top-layer">
+                <p id="day"></p>
+                <p id="date"></p>
+            </div>
+            <div class="main-layer ">
+                <p id="cityName">Get output here</p>
+                <div class="middle data_hide">
+                    <p><span id="temp"></span><sup>o</sup>C</p>
+                    <p id="image"></p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    {{>footer}}
+    <script src="js/main.js"></script>
+</body>
+
+</html>
